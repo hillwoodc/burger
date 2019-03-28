@@ -1,0 +1,41 @@
+<div id="main">
+  
+  <h1>Welcome to Hills Burger </h1>
+  <img src="./public/assets/img/burger.png">
+  </div>
+  <h3>Please enter your burger order</h3>
+</div>
+
+<div>
+  {{#each burgers}}
+  <div id="newBurger">
+    <p>test {{this.burger}}</p> 
+    <button onclick="eatBurger(event)" data-id="{{id}}">EAT ME</button>  
+  </div>
+  {{/each}}
+</div>
+
+<div>
+    <p>eatMe: {{eat_Me}}</p>
+
+</div>
+
+
+<div>
+  <form id="burgerForm">
+    <textarea type="text" name="burger"></textarea>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
+<div>
+  {{#each eatBurger }}
+  <div id="burgerEaten">
+    <p>{{this.burger}}</p>
+  </div>
+  {{/each}}
+<div>
+
+</div>
